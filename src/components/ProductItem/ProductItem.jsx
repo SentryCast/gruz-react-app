@@ -1,5 +1,5 @@
 import React from 'react';
-import 'ProductItem.css';
+import './ProductItem.css';
 
 
 const ProductItem = ({product, className, onAdd}) => {
@@ -21,3 +21,5 @@ const ProductItem = ({product, className, onAdd}) => {
         </div>
     )
 }
+
+export default ProductItem;
