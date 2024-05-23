@@ -9,6 +9,12 @@ const Form = () => {
     const [subject, setSubject] = useState('');
     const {tg} = useTelegram();
 
+    useEffect(() => {
+        tg.MainButton.setParams({
+            text: "Отправить данные"
+        })
+    }, [])
+
     const onSendData = useCallback(() => {
         const data = {
             country,
