@@ -25,7 +25,7 @@ const ProductList = () => {
     const {tg} = useTelegram();
 
     const onAdd = (product) => {
-        const alreadyAdded = addedItems.find(item = item.id === product.id);
+        const alreadyAdded = addedItems.find(item => item.id === product.id);
         let newItems = [];
 
         if(alreadyAdded) {
